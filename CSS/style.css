@@ -1,0 +1,369 @@
+/* 
+    font link up
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/*==============
+    global style
+================*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 50px 100px;
+}
+
+/*==============
+    common style
+================*/
+.btn{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+}
+.btn a{
+    color: #FFFFFF;
+    background-color: #FF900E;
+    text-decoration: none;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    padding: 10px 24px;
+    transition: .4s ease;
+}
+.btn a:hover{
+    background-color: transparent;
+    color: #FF900E;
+    border: 2px solid #FF900E;
+}
+
+.house_content,
+.sponspors_info
+{
+    max-width: 542px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+    color: #131313;
+}
+.description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 50px;
+}
+
+/*============================
+    header section style start
+==============================*/
+.architects_section{
+    background:  #FFF4E7;
+}
+.architects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.architects .page_logo{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px;
+}
+.architects .right_column{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+.architects .right_column a{
+    color: #424242;
+    text-decoration: none;
+    padding-right: 30px;
+}
+.architects .right_column a:last-child{
+    padding-right: 0;
+}
+.architects .right_column a:hover{
+    text-decoration: underline;
+    color: #131313;
+}
+/* architects_content style start */
+.architects_content {
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 100px 0 140px 0;
+}
+.architects_content .architect_title{
+    color: #131313;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+}
+.architects_content .architect_description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.architects_content .banner_images img{
+    width: 100%;
+}
+
+/*===========================
+    team_features style start
+------------------------------*/
+.team_features{
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+.team_features .features{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+}
+.team_features .features_list{
+    max-width: 537px;
+}
+.team_features .team_title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+}
+
+.team_features .list_color{
+    color: #727272;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+}
+.team_features .colors{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #FF900E;
+}
+
+.features_description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 18px;
+    margin-bottom: 32px;
+}
+
+.team_features .listbtn{
+    text-align: left;
+}
+/*=========================
+    team_features style end
+---------------------------*/
+/*==================================
+    features_information style start
+-----=======------------============*/
+.features_information{
+    display: flex;
+    gap: 58px;
+}
+.features_detales, .architects_info_image{
+    width: 48%;
+}
+.architects_info_image img{
+    width: 100%;
+}
+.architects_info_image{
+    position: relative;
+}
+.architects_info_image::before {
+	content: '10+Year Experience';
+	position: absolute;
+	left: -42px;
+	width: 150px;
+	background: #FF900E;
+	bottom: 52px;
+	padding: 46px 50px 45px 38px;
+	font-weight: 700;
+	line-height: 35px;
+	font-size: 33px;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 8px;
+}
+
+.features_title{
+    max-width: 468px;
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.detale_description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+.features_version{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.fea_detal_title {
+    padding: 30px 42px 10px 30px;
+}
+.info_description{
+    padding: 0 42px 10px 30px;
+}
+
+.fea_detal_title{
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+.info_description{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*================================
+    features_information style end
+-----=======------------==========*/
+
+/*================================
+       some facts style start
+-----=======------------==========*/
+.some_facts{
+    max-width: 526px;
+    text-align: left;
+}
+.some_fact_title{
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 53px;
+	color: #131313;
+}
+.facts_description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 26px;
+    padding-bottom: 100px;
+    text-align: start;
+}
+.fact_info{
+    display: flex;
+    justify-content: space-between;
+}
+.fact{
+    text-align: center;
+    padding: 46px 42px 60px 42px;
+    border: 1px solid #FF900E;
+}
+.fact:hover{
+    opacity: .7;
+}
+
+.fact_acount{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+}
+.project{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+/*================================
+       some facts style end
+-----=======------------==========*/
+/*================================
+       house_design style start
+-----=======------------==========*/
+.house_design{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.house_design img{
+    width: 100%;
+    border-radius: 8px;
+}
+/*================================
+       house_design style end
+-----=======------------==========*/
+
+/*================================
+      Our Sponspors style start
+-----=======------------==========*/
+.Sponspors{
+    display: flex;
+    justify-content: space-between;
+}
+.spons:hover{
+    opacity: .7;
+}
+/*================================
+      Our Sponspors style end
+-----=======------------==========*/
+/*================================
+      footer section style start
+-----=======------------==========*/
+footer{
+    background-color: #FFF4E7;
+    margin-top: 70px;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #424242;
+    text-align: center;
+}
+p span{
+    font-size: 24px;
+    font-weight: 500;
+    color: #c07f34;
+    cursor: pointer;
+    transition: .4s ease;
+}
+p span:hover{
+    color: #FF900E;
+}
+
+/*================================
+      footer section style end
+-----=======------------==========*/
