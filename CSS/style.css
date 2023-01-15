@@ -59,6 +59,7 @@ body{
     font-weight: 700;
     line-height: 53px;
     color: #131313;
+    padding-bottom: 15px;
 }
 .description{
     font-size: 16px;
@@ -516,6 +517,7 @@ Media Query / whit website responsive start
     /* footer section responsive start */
     footer {
         margin-top: 40px;
+        padding: 20px 0;
     }
     p {
         font-size: 15px;
@@ -527,6 +529,10 @@ Media Query / whit website responsive start
         color: #f58504;
     }
 }
+
+/*================================
+    Medium Device Responsive start
+==================================*/
 @media screen and (min-width: 577px) and (max-width: 992px){
     .container {
         width: 100%;
