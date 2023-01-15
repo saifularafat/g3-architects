@@ -278,12 +278,13 @@ body{
     font-weight: 400;
     color: #727272;
     line-height: 26px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     text-align: start;
 }
 .fact_info{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 .fact{
     text-align: center;
@@ -330,8 +331,8 @@ body{
       Our Sponspors style start
 -----=======------------==========*/
 .Sponspors{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 .spons:hover{
     opacity: .7;
@@ -479,10 +480,8 @@ Media Query / whit website responsive start
         padding-left: 18px;
     }
     .fact_info {
-        flex-direction: column;
-        width: 50%;
-        margin: 0 auto;
-        gap: 26px;
+        grid-template-columns: 1fr;
+        margin: 0 20px;
     }
     .fact {
         padding: 40px 38px 50px 38px;
@@ -510,8 +509,8 @@ Media Query / whit website responsive start
     }
     /* Sponspors section respo start */
     .Sponspors {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
         row-gap: 20px;
     }
     /* footer section responsive start */
@@ -529,11 +528,113 @@ Media Query / whit website responsive start
     }
 }
 @media screen and (min-width: 577px) and (max-width: 992px){
-
-    
-    
-    .hide{
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    /* header section responsive */
+    .architects {
+        padding: 20px;
+    }
+    .architects .page_logo {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .architects .right_column a{
+        padding-right: 20px;
+    }
+    .architects_content {
+        padding: 60px 0 90px 0;
+    }
+    .architects_content .architect_title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .architects_section img{
+        width: 100%;
+    } 
+      /* team features section responsive */
+       .team_features {
+        flex-direction: column;
+    }
+    .features_description {
+        text-align: left;
+    }
+    /* features_information section repo start */
+    .features_information {
+        flex-direction: column-reverse;
+    }
+    .features_detales, .architects_info_image {
+       width: 100%;
+    }
+    .architects_info_image img {
+        width: 94%;
+        padding-top: 50px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .architects_info_image::before{
         display: none;
+    }
+    .features_title {
+        font-size: 45px;
+        line-height: 50px;
+        padding-left: 18px;
+        margin-left: 14px;
+    }
+    .detale_description {
+        padding: 0px 13px;
+        text-align: left;
+    }
+    .fea_detal_title {
+        text-align: center;
+    }
+    .info_description {
+        text-align: center;
+    }
+     /* some_facts section respo start */
+      .some_fact_title {
+        font-size: 45px;
+        line-height: 53px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        padding-left: 18px;
+    }
+    .facts_description {
+        padding-bottom: 35px;
+        text-align: left;
+        padding-left: 18px;
+    }
+    .fact_info{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        margin: 0 50px;
+    }
+    /* common style respo start */
+    .title {
+        padding-top: 50px;
+    }
+    /* my portfolio section respo start */
+     .house_design {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+    }
+    .house_design img {
+        width: 92%;
+        margin: 0 4%;
+    } 
+     /* Sponspors section respo start */
+     .Sponspors {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 25px;
+    } 
+    /* footer section responsive start */
+    footer {
+        margin-top: 40px;
+    }
+    p {
+        padding: 40px;
     }
 }
 
