@@ -195,7 +195,7 @@ body{
 .architects_info_image{
     position: relative;
 }
-.architects_info_image::before {
+.architects_info_image::before{
 	content: '10+Year Experience';
 	position: absolute;
 	left: -42px;
@@ -367,3 +367,177 @@ p span:hover{
 /*================================
       footer section style end
 -----=======------------==========*/
+
+/*=========================================
+Media Query / whit website responsive start
+===========================================*/
+@media screen and (max-width: 576px){
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    /* header section responsive */
+    .architects{
+       flex-direction: column;
+    }
+    .architects .page_logo {
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+    .architects .right_column a{
+        padding-right: 12px;
+    }
+    .architects_content {
+        padding: 50px 0 70px 0;
+    }
+    .architects_content .architect_title {
+        font-size: 55px;
+        line-height: 65px;
+        padding-bottom: 8px;
+    }
+    .architects_content .architect_description {
+        line-height: 25px;
+        margin-bottom: 22px;
+        padding: 0 5px;
+    }
+    .btn {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .architects_section img{
+        width: 100%;
+    }
+    /* team features section responsive */
+    .team_features {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .team_features .features {
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .team_features .features_list {
+        padding-left: 30px;
+        padding-right: 27px;
+    }
+    .team_features .team_title,
+    .team_features .list_color,
+    .team_features .colors {
+        font-size: 37px;
+        line-height: 44px;
+    }
+    .features_description {
+        line-height: 22px;
+        margin-top: 14px;
+        margin-bottom: 26px;
+        text-align: left;
+    }
+    /* features_information section repo start */
+    .features_information {
+        flex-direction: column-reverse;
+    }
+    .features_detales, .architects_info_image {
+       width: 100%;
+    }
+    .architects_info_image img {
+        width: 94%;
+        padding-top: 50px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .architects_info_image::before{
+        display: none;
+    }
+    .features_title {
+        font-size: 36px;
+        line-height: 42px;
+        padding-left: 18px;
+        margin-left: 14px;
+    }
+    .detale_description {
+        line-height: 24px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        padding: 0 5px;
+    }
+    .fea_detal_title {
+        padding: 20px 42px 10px 30px;
+    }
+    .info_description {
+        text-align: left;
+    }
+    /* some_facts section respo start */
+    .some_fact_title {
+        font-size: 40px;
+        line-height: 50px;
+        padding-left: 18px;
+    }
+    .facts_description {
+        padding-bottom: 35px;
+        text-align: left;
+        padding-left: 18px;
+    }
+    .fact_info {
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        gap: 26px;
+    }
+    .fact {
+        padding: 40px 38px 50px 38px;
+        border: 2px solid #FF900E;
+    }
+    /* common style respo start */
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+        padding: 35px 0 15px 0;
+    }
+    .description {
+        line-height: 24px;
+        text-align: center;
+        padding: 0 20px 30px 20px;
+    }
+    /* my portfolio section respo start */
+    .house_design {
+        grid-template-columns: 1fr;
+        row-gap: 5px;
+    }
+    .house_design img {
+        width: 92%;
+        margin: 0 4%;
+    }
+    /* Sponspors section respo start */
+    .Sponspors {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    /* footer section responsive start */
+    footer {
+        margin-top: 40px;
+    }
+    p {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0 5px;
+    }
+    p span {
+        font-size: 18px;
+        color: #f58504;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px){
+
+    
+    
+    .hide{
+        display: none;
+    }
+}
+
+/*=======================================
+Media Query / whit website responsive end
+=========================================*/
+
